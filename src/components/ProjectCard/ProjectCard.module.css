@@ -75,6 +75,9 @@
 
 .techList {
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
 .link {
