@@ -38,7 +38,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className={styles.header}>
         <h3 className={styles.title}>{title}</h3>
         <p className={`${styles.meta} label-mono`}>
-          {organization}
+          {organization} &bull; {date}
         </p>
       </div>
       <div className={styles.body}>

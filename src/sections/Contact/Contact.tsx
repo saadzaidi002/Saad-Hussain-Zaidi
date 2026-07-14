@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Briefcase, ArrowUpRight, ArrowRight } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUpRight, ArrowRight } from 'lucide-react';
 import styles from './Contact.module.css';
 
 const GithubIcon = () => (
