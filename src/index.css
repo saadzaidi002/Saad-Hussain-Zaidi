@@ -1,0 +1,118 @@
+:root {
+  /* Kinetic Engineering Design System */
+  --color-primary: #dbffe2; /* Mint/Cyan */
+  --color-primary-dim: #73db9a;
+  --color-bg: #0b1326; /* Deep Navy */
+  --color-bg-lowest: #060e20;
+  --color-bg-low: #131b2e;
+  --color-card-bg: #171f33;
+  --color-card-bg-high: #222a3d;
+  --color-border: #3e4a40;
+  --color-outline: #889489;
+  --color-chip-bg: rgba(45, 52, 73, 0.5);
+  
+  --color-text: #dae2fd;
+  --color-text-muted: #bdcabe;
+
+  --font-primary: 'Nunito', sans-serif;
+  --font-mono: 'Nunito', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+/* Also ensure clickable elements hide cursor to let custom cursor show */
+a, button, [role="button"], input, select, textarea {
+  cursor: none;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover, a:focus {
+  text-shadow: 0 0 8px rgba(195, 245, 255, 0.4);
+}
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 8px var(--color-primary);
+  border-radius: 4px;
+}
+
+/* Typography Classes */
+.label-mono {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+/* Lists styling with Electric Blue squares */
+ul.custom-list {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+ul.custom-list li {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+ul.custom-list li::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 0.45rem;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 1px;
+}
+
+/* Base Sections Layout */
+section {
+  padding: 60px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 80px 24px;
+  }
+}
+
+.section-title {
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  flex-grow: 1;
+  background-color: var(--color-border);
+  margin-left: 1.5rem;
+}

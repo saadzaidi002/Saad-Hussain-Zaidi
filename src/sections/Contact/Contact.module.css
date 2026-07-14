@@ -1,0 +1,194 @@
+.contact {
+  padding-bottom: 8rem;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.labelNumber {
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.labelLine {
+  height: 1px;
+  width: 40px;
+  background-color: var(--color-border);
+}
+
+.labelText {
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+}
+
+.title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.titleMuted {
+  color: var(--color-text-muted);
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.contactCard:hover {
+  border-color: var(--color-primary);
+  background-color: rgba(115, 219, 154, 0.05);
+}
+
+.cardIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(115, 219, 154, 0.1);
+  color: var(--color-primary);
+  border-radius: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+.cardValue {
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.cardArrow {
+  position: absolute;
+  right: 1.5rem;
+  color: var(--color-text-muted);
+  transition: color 0.3s ease;
+}
+
+.contactCard:hover .cardArrow {
+  color: var(--color-primary);
+}
+
+.socialsColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialsTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.socialsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.socialBtn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: rgba(115, 219, 154, 0.05);
+}
+
+.primaryCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--color-primary);
+  color: #00391d;
+  border-radius: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(115, 219, 154, 0.2);
+  filter: brightness(1.1);
+  text-shadow: none;
+  color: #00391d;
+}

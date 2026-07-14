@@ -1,0 +1,91 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: 3fr 2fr;
+    gap: 4rem;
+  }
+}
+
+.summary p {
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+}
+
+.resumeContainer {
+  margin-top: 2rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.details h3 {
+  font-size: 1.25rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(219, 255, 226, 0.3);
+}
+
+.timelineDot {
+  position: absolute;
+  left: -5px;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.timelineMeta {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: 0.25rem;
+}
+
+.certifications ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.certifications li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.certDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #7bd0ff;
+  flex-shrink: 0;
+}

@@ -1,0 +1,114 @@
+.pipeline {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.pipelineRow {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .pipelineRow {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+}
+
+.pipelineExplanation {
+  flex: 1;
+  padding-right: 0;
+}
+
+@media (min-width: 1024px) {
+  .pipelineExplanation {
+    padding-right: 2rem;
+    text-align: right;
+  }
+}
+
+.pipelineExplanation .label-mono {
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.pipelineExplanation h3 {
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.pipelineExplanation p {
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.pipelineCard {
+  flex: 1;
+}
+
+.pipelineConnector {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .pipelineConnector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    position: relative;
+    align-self: stretch;
+  }
+  
+  .pipelineDot {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    box-shadow: 0 0 15px rgba(115, 219, 154, 0.4);
+    z-index: 2;
+    margin-top: 2rem; /* center it vertically relative to card roughly */
+  }
+  
+  .pipelineLine {
+    position: absolute;
+    top: calc(2rem + 48px);
+    bottom: -6rem; /* bridge the gap to next row */
+    width: 2px;
+    background-color: rgba(62, 74, 64, 0.5); /* outline variant */
+  }
+}
+
+.skillCard {
+  background-color: var(--color-card-bg-high);
+  border: 1px solid rgba(62, 74, 64, 0.5);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.skillCard:hover {
+  border-color: rgba(115, 219, 154, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.chipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

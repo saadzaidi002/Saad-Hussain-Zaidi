@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>S.M. Saad Hussain Zaidi | Full-Stack IoT &amp; Software Engineer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Hanken+Grotesk:wght@600;700;800&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#2d3449",
+                    "outline-variant": "#3e4a40",
+                    "on-tertiary-fixed": "#111c2d",
+                    "on-secondary-fixed-variant": "#004c69",
+                    "on-primary-container": "#006d3e",
+                    "tertiary": "#f4f6ff",
+                    "primary-fixed-dim": "#73db9a",
+                    "primary": "#dbffe2",
+                    "on-primary-fixed": "#00210f",
+                    "tertiary-container": "#cfdaf2",
+                    "surface-container-high": "#222a3d",
+                    "surface-container-lowest": "#060e20",
+                    "surface-container": "#171f33",
+                    "on-primary-fixed-variant": "#00522d",
+                    "error": "#ffb4ab",
+                    "on-tertiary-container": "#545f74",
+                    "inverse-surface": "#dae2fd",
+                    "background": "#0b1326",
+                    "surface-tint": "#73db9a",
+                    "tertiary-fixed-dim": "#bcc7de",
+                    "on-secondary-fixed": "#001e2c",
+                    "on-surface": "#dae2fd",
+                    "on-tertiary-fixed-variant": "#3c475a",
+                    "on-secondary-container": "#00374d",
+                    "on-primary": "#00391d",
+                    "secondary-fixed-dim": "#7bd0ff",
+                    "surface-bright": "#31394d",
+                    "on-error": "#690005",
+                    "secondary-fixed": "#c4e7ff",
+                    "outline": "#889489",
+                    "surface-container-highest": "#2d3449",
+                    "tertiary-fixed": "#d8e3fb",
+                    "surface-dim": "#0b1326",
+                    "primary-container": "#86efac",
+                    "on-error-container": "#ffdad6",
+                    "primary-fixed": "#8ff8b4",
+                    "surface": "#0b1326",
+                    "inverse-primary": "#006d3e",
+                    "secondary-container": "#00a6e0",
+                    "on-secondary": "#00354a",
+                    "inverse-on-surface": "#283044",
+                    "on-tertiary": "#263143",
+                    "on-background": "#dae2fd",
+                    "surface-container-low": "#131b2e",
+                    "error-container": "#93000a",
+                    "secondary": "#7bd0ff",
+                    "on-surface-variant": "#bdcabe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "stack-lg": "32px",
+                    "section-padding": "120px",
+                    "container-max": "1280px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-md": ["Geist"],
+                    "headline-lg": ["Hanken Grotesk"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "display-lg": ["Hanken Grotesk"],
+                    "code-sm": ["Geist"],
+                    "headline-lg-mobile": ["Hanken Grotesk"],
+                    "body-md": ["Inter"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "code-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+        .skill-tag {
+            background: rgba(45, 52, 73, 0.5);
+            border: 1px solid rgba(136, 148, 137, 0.2);
+            transition: all 0.3s ease;
+        }
+        .skill-tag:hover {
+            border-color: #73db9a;
+            background: rgba(115, 219, 154, 0.1);
+        }
+        .nav-blur {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased">
+<!-- TopNavBar -->
+<header class="bg-background/80 backdrop-blur-md font-label-md text-label-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 flat no shadows">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">S.M. Saad Hussain Zaidi</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-primary border-b-2 border-primary pb-1 transition-all" href="#home">Home</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-variant/50" href="#about">About</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-variant/50" href="#skills">Skills</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-variant/50" href="#experience">Experience</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-variant/50" href="#projects">Projects</a>
+<a class="text-on-surface-variant hover:text-on-surface transition-colors hover:bg-surface-variant/50" href="#contact">Contact</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded font-label-md uppercase tracking-wider hover:bg-primary-fixed-dim transition-all active:scale-95 duration-200 ease-in-out">
+                Hire Me
+            </button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[80vh] flex flex-col justify-center px-gutter max-w-container-max mx-auto py-section-padding" id="home">
+
+<div class="relative z-10 max-w-3xl">
+<h1 class="font-display-lg text-display-lg md:text-display-lg text-primary mb-2">S.M. Saad Hussain Zaidi.</h1>
+<h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-on-surface mb-8">Full-Stack IoT &amp; Software Engineer.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
+                    I build scalable solutions bridging the gap between hardware, data, and software. Specializing in IoT systems, machine learning, and full-stack development to create intelligent, data-driven applications.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded font-label-md uppercase tracking-widest hover:brightness-110 transition-all">Hire Me</button>
+<button class="border border-outline text-on-surface px-8 py-4 rounded font-label-md uppercase tracking-widest hover:bg-surface-variant/30 transition-all">View Projects</button>
+</div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding border-t border-outline-variant/10" id="about">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-stack-lg">
+<div class="md:col-span-7">
+<div class="flex items-center gap-4 mb-stack-lg">
+<h2 class="font-headline-md text-headline-md">About Me</h2>
+<div class="h-px bg-outline-variant/30 flex-grow"></div>
+</div>
+<div class="space-y-stack-md text-on-surface-variant leading-relaxed">
+<p>I am a highly motivated engineer with a strong foundation in Applied Physics, transitioning into software, machine learning, and IoT development. Over my academic and professional career, I have consistently demonstrated the ability to tackle complex analytical problems and build end-to-end data pipelines, predictive models, and web platforms.</p>
+<p>Whether it's deploying hybrid machine learning models to predict financial risk or engineering full-stack solutions for hardware integration, I thrive at the intersection of data and hardware.</p>
+</div>
+<button class="mt-stack-lg border border-outline text-on-surface px-6 py-3 rounded font-label-md inline-flex items-center gap-2 hover:bg-surface-variant/30 transition-all">
+<span class="material-symbols-outlined">download</span> Download Resume
+                    </button>
+</div>
+<div class="md:col-span-5 space-y-stack-lg">
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-stack-md text-primary">Education</h3>
+<div class="space-y-stack-md">
+<div class="relative pl-6 border-l border-primary/30">
+<div class="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-primary"></div>
+<h4 class="font-bold text-on-surface">NED University of Engineering &amp; Technology, Karachi</h4>
+<p class="text-sm text-on-surface-variant">BS Applied Physics | Oct 2022 - Dec 2026</p>
+</div>
+<div class="relative pl-6 border-l border-primary/30">
+<div class="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-primary"></div>
+<h4 class="font-bold text-on-surface">UK Tech Hub</h4>
+<p class="text-sm text-on-surface-variant">Applied Data Science with Machine Learning | Oct 2023 - Nov 2024</p>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-stack-md text-primary">Certifications</h3>
+<ul class="space-y-stack-sm text-on-surface-variant font-label-md">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Fundamentals of Python (Nov 2023)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Data Manipulation and Analysis (Jan 2024)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> SQL (Feb 2024)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Data Visualization (Apr 2024)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Statistics for Data Science (Jul 2024)</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Machine Learning (Nov 2024)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills & Tech Section -->
+<section class="bg-surface-container-low py-section-padding" id="skills">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-4 mb-section-padding">
+<h2 class="font-headline-md text-headline-md">Skills &amp; Technologies</h2>
+<div class="h-px bg-outline-variant/30 flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Technical Skills -->
+<div class="bg-surface-container-high p-8 rounded border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">monitoring</span>
+<h3 class="font-headline-sm text-headline-sm">Technical Skills</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Statistics</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Machine Learning</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Deep Learning</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Content Writing</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Analytics</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Data Wrangling</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Data Visualization</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Object Detection</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Image Processing</span>
+</div>
+</div>
+<!-- IoT & Embedded Systems -->
+<div class="bg-surface-container-high p-8 rounded border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">memory</span>
+<h3 class="font-headline-sm text-headline-sm">IoT &amp; Embedded</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">IoT Systems</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Full-Stack IoT</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Embedded Engineering</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Firmware Development</span>
+</div>
+</div>
+<!-- Hardware & Electronics -->
+<div class="bg-surface-container-high p-8 rounded border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">circle</span>
+<h3 class="font-headline-sm text-headline-sm">Hardware</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">PCB Designing</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Electronics</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Prototyping &amp; Simulation</span>
+</div>
+</div>
+<!-- Web Engineering -->
+<div class="bg-surface-container-high p-8 rounded border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">language</span>
+<h3 class="font-headline-sm text-headline-sm">Web Engineering</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Web Designing</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Web Development</span>
+</div>
+</div>
+<!-- Languages -->
+<div class="bg-surface-container-high p-8 rounded border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">code</span>
+<h3 class="font-headline-sm text-headline-sm">Languages</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Python</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">HTML</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">SQL</span>
+</div>
+</div>
+<!-- Frameworks -->
+<div class="bg-surface-container-high p-8 rounded border border-outline-variant/20 hover:border-primary/50 transition-colors">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">terminal</span>
+<h3 class="font-headline-sm text-headline-sm">Frameworks</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Pandas</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">NumPy</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Matplotlib</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Seaborn</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Plotly</span>
+<span class="skill-tag px-3 py-1.5 text-xs rounded font-label-md">Ultralytics (YOLOv8)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding" id="experience">
+<div class="flex items-center gap-4 mb-section-padding">
+<h2 class="font-headline-md text-headline-md">Experience</h2>
+<div class="h-px bg-outline-variant/30 flex-grow"></div>
+</div>
+<div class="relative border-l border-outline-variant/30 ml-4 pb-12">
+<div class="mb-stack-lg relative pl-12">
+<div class="absolute -left-[11px] top-0 w-5 h-5 rounded-full border-4 border-primary bg-background"></div>
+<div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Data Analyst Intern</h3>
+<p class="text-on-surface font-semibold">Placement Dost, Pinnacle Full-Stack Interns, NED University, SUPARCO</p>
+</div>
+<span class="text-on-surface-variant font-label-md mt-2 md:mt-0 px-3 py-1 bg-surface-container rounded border border-outline-variant/20">April 2024 – August 2025</span>
+</div>
+<ul class="space-y-stack-sm text-on-surface-variant list-disc pl-5">
+<li>Data Analysis &amp; Visualization: Built Power BI dashboards and conducted in-depth analysis of large datasets.</li>
+<li>Machine Learning: Developed predictive models using Python &amp; ML algorithms.</li>
+<li>Deep Learning: Designed and implemented neural network architectures for computer vision, object detection, and predictive modeling.</li>
+<li>Demonstrated strong Python proficiency and applied ML techniques to real-world datasets.</li>
+<li>Facilitated cross-functional stakeholder communication to align technical deliverables with business goals.</li>
+<li>Delivered problem-solving through data-driven solutions and actionable insights.</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Featured Projects Section -->
+<section class="bg-surface-container-lowest py-section-padding" id="projects">
+<div class="px-gutter max-w-container-max mx-auto">
+<div class="flex items-center gap-4 mb-section-padding">
+<h2 class="font-headline-md text-headline-md">Featured Projects</h2>
+<div class="h-px bg-outline-variant/30 flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group bg-surface-container p-6 rounded-xl border border-outline-variant/10 hover:border-primary/40 transition-all duration-300 flex flex-col h-full">
+<div class="aspect-video w-full mb-6 overflow-hidden rounded bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated digital interface displaying a satellite view of industrial rooftop solar panels. Overlaid on the image are semi-transparent neon green bounding boxes identifying each solar array, with technical data metrics floating nearby. The aesthetic is high-tech, precise, and professional, using a deep navy and emerald color palette to represent sustainable engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5csBolwCeGnU9fhP4AKENt9G7IAFz9kGrWveyXlVWGcF51tEoeIIoMYq1IvSti0uoYaG7A4RrwJzNAbxW2_cD6m0qIQKAv2Nz6Y-6xxx1d-BhPIxxIKMXcEylnaAbXEoWUfy5Ez8sPfE8E90iMdJ8TYyfcDGmR2jTAr-WwYm5zddteEvcF5FT4D77ZpKEgyaBhFohVXDGYAN1GDFiHzIOZbPZZzZ_C-brHmD1cHG0c2WJrwvHs2FTwg"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Solar Panel Detection &amp; Change Detection AI Model</h3>
+<p class="text-on-surface-variant text-sm mb-4">RESOLVE South, SUPARCO Complex, Karachi | Jun–Aug 2025</p>
+<p class="text-on-surface-variant mb-6 flex-grow">YOLOv8-based detection and monitoring of solar panels from satellite imagery, with model comparison for accuracy and renewable energy monitoring insights.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-2 py-1 bg-surface-variant/50 text-[10px] uppercase tracking-wider rounded border border-outline-variant/30">Python</span>
+<span class="px-2 py-1 bg-surface-variant/50 text-[10px] uppercase tracking-wider rounded border border-outline-variant/30">Ultralytics</span>
+<span class="px-2 py-1 bg-surface-variant/50 text-[10px] uppercase tracking-wider rounded border border-outline-variant/30">Computer Vision</span>
+</div>
+<a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Project <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Project 2 -->
+<div class="group bg-surface-container p-6 rounded-xl border border-outline-variant/10 hover:border-primary/40 transition-all duration-300 flex flex-col h-full">
+<div class="aspect-video w-full mb-6 overflow-hidden rounded bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An abstract visualization of financial risk represented by a network of glowing nodes and interconnected lines over a dark slate background. Bursts of light signify data points while a subtle dashboard overlay shows fluctuating financial charts and percentage indicators. The mood is analytical, serious, and technologically sophisticated, utilizing cyan and deep grey tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDanxr9aahfIBkjBCsPm_8cLCPIvvdQYYrFUoPUn7hToUpWu-c7riqFHtczIVofI_Wy3VcDwSOP0YhXFf5kO84ya_BCBB6LpdgDtb_hSMD5cGAMWyqfspb73wHemI3b4qHrKJ2aMfzSHBteD7wDUdwKdFTWhI1WzBD2ijq-L6WGCnRcg2vgnG1JYO5Lgoz2Sx2Ot7GrI7wUnv3gVvheSnS5JF25tG92th6jtux1NexTMCEPOPqZS54MDQ"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Bankruptcy Risk Prediction Using Hybrid ML Models</h3>
+<p class="text-on-surface-variant text-sm mb-4">NED University | Feb–Jun 2025</p>
+<p class="text-on-surface-variant mb-6 flex-grow">Hybrid Dynamic Panel Probit + ANN (11-neuron single hidden layer, cross-entropy loss, k-fold CV) using financial/macroeconomic/market variables.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-2 py-1 bg-surface-variant/50 text-[10px] uppercase tracking-wider rounded border border-outline-variant/30">Machine Learning</span>
+<span class="px-2 py-1 bg-surface-variant/50 text-[10px] uppercase tracking-wider rounded border border-outline-variant/30">Deep Learning</span>
+</div>
+<a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Project <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<!-- Project 3 -->
+<div class="group bg-surface-container p-6 rounded-xl border border-outline-variant/10 hover:border-primary/40 transition-all duration-300 flex flex-col h-full">
+<div class="aspect-video w-full mb-6 overflow-hidden rounded bg-surface-variant">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A topographical map visualization showing areas at risk of flooding, with vibrant blue heat-map zones indicating water depth levels. Stylized geometric icons of houses and trees are scattered across the map, some highlighted with warning indicators. The visual style is modern cartography meets data science, with a clean aesthetic and high contrast between the dark terrain and glowing flood zones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxEI5nPV2_FyUXa9qT5o5Cq_IpGaoEwFkBqUaH540ZRIImMey3q-9jkiDAYAg5Tklj73t_Bptoa1Md1S6y0R0zwyJppkXPB76H9Irpk7uD-FD5dUEYHIeg4XBSBzof-zAR0ANruTzYNNmvmW7LyB80ULKg2baL2WmMwxaVtAK-uZ4nzzacNmsdiU5dVRz4k0rCY7YM2MPzBgCyy-pkl0SBWdJv73Bz30FJgY-C9IWe98vJN0DvwKG59w"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Flood Damage Prediction Model</h3>
+<p class="text-on-surface-variant text-sm mb-4">NED University | Dec 2024–Jan 2025</p>
+<p class="text-on-surface-variant mb-6 flex-grow">Two-stage classification pipeline (inundation depth + material type, one-hot encoding); optimized Random Forest — 95% accuracy.</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-2 py-1 bg-surface-variant/50 text-[10px] uppercase tracking-wider rounded border border-outline-variant/30">Random Forest</span>
+<span class="px-2 py-1 bg-surface-variant/50 text-[10px] uppercase tracking-wider rounded border border-outline-variant/30">Data Science</span>
+</div>
+<a class="text-primary font-label-md flex items-center gap-2 hover:translate-x-1 transition-transform" href="#">View Project <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-gutter max-w-container-max mx-auto py-section-padding" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+<div>
+<span class="text-primary font-label-md uppercase tracking-widest mb-4 block">Contact</span>
+<h2 class="font-display-lg text-display-lg mb-stack-md leading-tight">Let's Create Together</h2>
+<p class="text-on-surface-variant mb-stack-lg max-w-lg">Ready to transform your ideas into exceptional digital experiences? Let's collaborate and build something remarkable.</p>
+<div class="space-y-6">
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary">mail</span>
+</div>
+<div>
+<p class="text-xs uppercase text-on-surface-variant tracking-wider mb-1">Email</p>
+<p class="text-on-surface font-semibold">s.m.saad001@gmail.com</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<p class="text-xs uppercase text-on-surface-variant tracking-wider mb-1">Phone</p>
+<p class="text-on-surface font-semibold">+92 315 4529120</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded bg-surface-container flex items-center justify-center border border-outline-variant/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<p class="text-xs uppercase text-on-surface-variant tracking-wider mb-1">Location</p>
+<p class="text-on-surface font-semibold">Karachi, Pakistan</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-10 rounded-2xl border border-outline-variant/20 shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+<h3 class="font-headline-sm text-headline-sm mb-stack-lg">Connect With Me</h3>
+<div class="grid grid-cols-2 gap-4 mb-stack-lg">
+<a class="bg-surface-container-high p-4 rounded border border-outline-variant/20 flex items-center gap-3 hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-sm">link</span> GitHub
+                        </a>
+<a class="bg-surface-container-high p-4 rounded border border-outline-variant/20 flex items-center gap-3 hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-sm">link</span> LinkedIn
+                        </a>
+<a class="bg-surface-container-high p-4 rounded border border-outline-variant/20 flex items-center gap-3 hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-sm">link</span> Twitter
+                        </a>
+<a class="bg-surface-container-high p-4 rounded border border-outline-variant/20 flex items-center gap-3 hover:bg-surface-variant transition-all" href="#">
+<span class="material-symbols-outlined text-sm">link</span> Instagram
+                        </a>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded font-label-md uppercase tracking-widest flex items-center justify-center gap-2 hover:brightness-110 transition-all">
+                        Start a Project Together <span class="material-symbols-outlined">arrow_outward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest full-width border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg w-full px-gutter py-section-padding max-w-container-max mx-auto">
+<div class="md:col-span-2">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface mb-6">S.M. SAAD ZAIDI</div>
+<p class="text-on-surface-variant max-w-sm mb-8 leading-relaxed">Dedicated to pushing the boundaries of IoT and Data Science through innovative engineering and continuous learning.</p>
+<div class="flex gap-4">
+<!-- Social icons would go here -->
+</div>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-6 uppercase tracking-widest">Navigation</h4>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors" href="#home">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="#skills">Skills</a></li>
+<li><a class="hover:text-primary transition-colors" href="#projects">Projects</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-on-surface mb-6 uppercase tracking-widest">Specialization</h4>
+<ul class="space-y-4 font-body-md text-on-surface-variant">
+<li>Full-Stack IoT Engineer</li>
+<li>Machine Learning &amp; Data Analyst</li>
+<li>Hardware Prototyping Specialist</li>
+</ul>
+</div>
+</div>
+<div class="px-gutter max-w-container-max mx-auto py-8 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm">© 2026 S.M. SAAD ZAIDI. All rights reserved.</p>
+<p class="text-on-surface-variant text-sm">Crafted with passion &amp; modern web technologies</p>
+</div>
+</footer>
+<script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for active nav state
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('header nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('text-primary', 'border-b-2', 'border-primary', 'pb-1');
+                    link.classList.remove('text-on-surface-variant');
+                }
+            });
+        });
+    </script>
+</body></html>

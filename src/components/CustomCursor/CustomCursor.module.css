@@ -1,0 +1,33 @@
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+}
+
+.cursor.hovering {
+  width: 64px;
+  height: 64px;
+  background-color: rgba(115, 219, 154, 0.1);
+  border-color: var(--color-primary-dim);
+}
+
+.dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+}

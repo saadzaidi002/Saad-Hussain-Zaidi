@@ -1,0 +1,44 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  box-shadow: 0 0 8px var(--color-primary);
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: #00391d;
+  border: 1px solid var(--color-primary);
+}
+
+.primary:hover, .primary:focus {
+  filter: brightness(1.1);
+  color: #00391d;
+}
+
+.secondary {
+  background-color: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-outline);
+}
+
+.secondary:hover, .secondary:focus {
+  background-color: rgba(45, 52, 73, 0.3);
+  color: var(--color-text);
+  text-shadow: none;
+}

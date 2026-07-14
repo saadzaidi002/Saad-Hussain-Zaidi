@@ -1,0 +1,21 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 16px;
+  background-color: var(--color-chip-bg);
+  border: 1px solid rgba(136, 148, 137, 0.2);
+  color: var(--color-text);
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-family: var(--font-primary);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.chip:hover {
+  border-color: var(--color-primary-dim);
+  background-color: rgba(115, 219, 154, 0.1);
+  transform: translateY(-2px);
+}
