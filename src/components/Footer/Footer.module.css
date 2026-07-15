@@ -29,15 +29,21 @@
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8rem 24px 2rem;
+  padding: 4rem 16px 2rem;
   z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: 8rem 24px 2rem;
+  }
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
-  margin-bottom: 4rem;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -53,7 +59,7 @@
   font-weight: 600;
   letter-spacing: 0.05em;
   color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
@@ -64,7 +70,7 @@
 }
 
 .navList li, .specList li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .navLink, .specList li {

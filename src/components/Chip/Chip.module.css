@@ -2,13 +2,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
-  padding: 0 16px;
+  min-height: 22px;
+  padding: 0 8px;
   background-color: var(--color-chip-bg);
   border: 1px solid rgba(136, 148, 137, 0.2);
   color: var(--color-text);
   border-radius: 9999px;
-  font-size: 0.875rem;
+  font-size: 0.7rem;
   font-family: var(--font-primary);
   white-space: nowrap;
   transition: all 0.3s ease;
