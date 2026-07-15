@@ -88,7 +88,7 @@ ul.custom-list li::before {
 
 /* Base Sections Layout */
 section {
-  padding: 60px 16px;
+  padding: 40px 16px;
   max-width: 1200px;
   margin: 0 auto;
 }

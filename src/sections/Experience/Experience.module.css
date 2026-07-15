@@ -4,9 +4,15 @@
 
 .item {
   position: relative;
-  padding-left: 2rem;
+  padding-left: 1.5rem;
   border-left: 1px solid rgba(62, 74, 64, 0.5);
   margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .item {
+    padding-left: 2rem;
+  }
 }
 
 .item::before {
