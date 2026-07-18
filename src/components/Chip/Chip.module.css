@@ -4,7 +4,9 @@
   justify-content: center;
   min-height: 22px;
   padding: 0 8px;
-  background-color: var(--color-chip-bg);
+  background-color: rgba(45, 52, 73, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(136, 148, 137, 0.2);
   color: var(--color-text);
   border-radius: 9999px;

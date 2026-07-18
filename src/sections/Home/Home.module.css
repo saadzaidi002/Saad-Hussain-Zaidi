@@ -9,11 +9,6 @@
   max-width: 800px;
 }
 
-.greeting {
-  color: var(--color-primary);
-  margin-bottom: 1rem;
-}
-
 .name {
   font-size: clamp(3rem, 6vw, 4rem);
   font-weight: 800;
@@ -21,6 +16,7 @@
   line-height: 1.1;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -29,6 +25,7 @@
   color: var(--color-text);
   line-height: 1.2;
   margin-bottom: 2rem;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
 }
 
 .description {
@@ -37,6 +34,7 @@
   color: var(--color-text-muted);
   margin-bottom: 3rem;
   line-height: 1.6;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 .actions {

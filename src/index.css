@@ -36,7 +36,7 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: transparent;
   color: var(--color-text);
   font-family: var(--font-primary);
   line-height: 1.6;
@@ -93,6 +93,7 @@ ul.custom-list li::before {
 
 /* Base Sections Layout */
 section {
+  position: relative;
   padding: 40px 16px;
   max-width: 1200px;
   margin: 0 auto;
@@ -111,6 +112,7 @@ section {
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 .section-title::after {

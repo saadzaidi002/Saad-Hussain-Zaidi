@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 import { Navigation } from './components/Navigation/Navigation';
+import { VideoBackground } from './components/VideoBackground/VideoBackground';
 import { Home } from './sections/Home/Home';
 import { About } from './sections/About/About';
 import { Skills } from './sections/Skills/Skills';
@@ -36,6 +37,7 @@ function App() {
 
   return (
     <>
+      <VideoBackground />
       <CustomCursor />
       <Navigation />
       <main>

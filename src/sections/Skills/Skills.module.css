@@ -73,7 +73,7 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: var(--color-bg);
+    background-color: rgba(11, 19, 38, 0.7);
     border: 2px solid var(--color-primary);
     display: flex;
     align-items: center;
@@ -94,7 +94,9 @@
 }
 
 .skillCard {
-  background-color: var(--color-card-bg-high);
+  background-color: rgba(34, 42, 61, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(62, 74, 64, 0.5);
   border-radius: 0.5rem;
   padding: 1.5rem;
