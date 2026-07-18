@@ -46,7 +46,7 @@ const PROJECTS_DATA = [
     date: 'Jun–Jul 2024',
     description: 'Text preprocessing and classification (decision trees) for spam detection.',
     technologies: ['Python', 'Machine Learning', 'NLP'],
-    link: 'https://github.com/saadzaidi002/pfsinterns',
+    link: 'https://spam-email-detection-two.vercel.app/',
     image: 'https://images.unsplash.com/photo-1557200134-90327ee9fafa?q=80&w=600&auto=format&fit=crop',
   },
   {
@@ -55,8 +55,17 @@ const PROJECTS_DATA = [
     date: 'Jun–Jul 2024',
     description: 'ML classification model for healthcare/diagnostic analytics.',
     technologies: ['Machine Learning', 'Data Analysis'],
-    link: 'https://github.com/saadzaidi002/pfsinterns',
+    link: 'https://heart-diesease-prediction-gluh.vercel.app/',
     image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=600&auto=format&fit=crop',
+  },
+  {
+    title: 'Customer Segmentation',
+    organization: 'Personal Project',
+    date: '2024',
+    description: 'Customer segmentation application using Machine Learning clustering techniques.',
+    technologies: ['Python', 'Machine Learning', 'Data Science'],
+    link: 'https://customer-segmentation-lime.vercel.app/',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop',
   },
 ];
 
