@@ -17,7 +17,7 @@ export const VideoBackground: React.FC = () => {
       <video
         className={styles.video}
         ref={videoRef}
-        src="/merged.mp4"
+        src="https://github.com/saadzaidi002/Saad-Hussain-Zaidi/releases/download/v10.0/merged.mp4"
         muted
         playsInline
         // @ts-expect-error — webkit vendor attribute for older iOS Safari
