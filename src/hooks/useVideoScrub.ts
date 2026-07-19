@@ -34,7 +34,7 @@ export function useVideoScrub(
     const video = videoRef.current;
     if (!video) return;
 
-    const LERP = 0.12;
+    const LERP = 0.45;
     const SNAP_EPS = 0.003;
     const s = state.current;
 
