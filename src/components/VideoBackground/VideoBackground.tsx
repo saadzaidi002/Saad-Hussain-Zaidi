@@ -34,20 +34,18 @@ export const VideoBackground: React.FC = () => {
 
   return (
     <div className={styles.videoBackground}>
-      {videoSrc && (
-        <video
-          className={styles.video}
-          ref={videoRef}
-          src={videoSrc}
-          muted
-          playsInline
-          // webkit vendor attribute for older iOS Safari
-          webkit-playsinline=""
-          preload="auto"
-          disablePictureInPicture
-          aria-hidden="true"
-        />
-      )}
+      <video
+        className={styles.video}
+        ref={videoRef}
+        src={videoSrc || undefined}
+        muted
+        playsInline
+        // webkit vendor attribute for older iOS Safari
+        webkit-playsinline=""
+        preload="auto"
+        disablePictureInPicture
+        aria-hidden="true"
+      />
       <div className={styles.overlay} />
     </div>
   );
