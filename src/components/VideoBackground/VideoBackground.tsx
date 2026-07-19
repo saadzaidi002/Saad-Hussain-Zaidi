@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useVideoScrub } from '../../hooks/useVideoScrub';
 import styles from './VideoBackground.module.css';
 
@@ -8,6 +8,14 @@ import styles from './VideoBackground.module.css';
  */
 export const VideoBackground: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile(); // Check on mount
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Pass null for sectionRef — the hook will use the full document
   useVideoScrub(null, videoRef);
@@ -17,7 +25,7 @@ export const VideoBackground: React.FC = () => {
       <video
         className={styles.video}
         ref={videoRef}
-        src="/merged.mp4"
+        src={isMobile ? undefined : "/merged.mp4"}
         muted
         playsInline
         // webkit vendor attribute for older iOS Safari
