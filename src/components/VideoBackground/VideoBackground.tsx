@@ -20,7 +20,7 @@ export const VideoBackground: React.FC = () => {
         src="https://github.com/saadzaidi002/Saad-Hussain-Zaidi/releases/download/v10.0/merged.mp4"
         muted
         playsInline
-        // @ts-expect-error — webkit vendor attribute for older iOS Safari
+        // webkit vendor attribute for older iOS Safari
         webkit-playsinline=""
         preload="auto"
         disablePictureInPicture
