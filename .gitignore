@@ -26,3 +26,8 @@ dist-ssr
 # Resumes
 Airaf Adil - Resume .pdf
 Saad_Resume.docx
+
+# Large binary files
+ffmpeg.zip
+*.zip
+Background.html
